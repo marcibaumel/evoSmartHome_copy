@@ -1,3 +1,6 @@
+The project was originally on azure devops that's why there are not much commit in here
+
+
 # evoSmartHome
 
 see example mongodb structure in mongodbstructuredescription.jsonc in docs
