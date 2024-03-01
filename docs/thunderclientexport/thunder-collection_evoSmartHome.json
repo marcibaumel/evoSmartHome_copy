@@ -1,0 +1,192 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "evoSmartHome",
+    "dateExported": "2023-12-27T14:12:36.715Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "aa57f58f-6718-4ed6-9178-c55ab8bc48b3",
+            "name": "rgb",
+            "containerId": "",
+            "created": "2023-11-27T18:35:49.350Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "9e2a07fa-a613-49a6-b572-29b029259f82",
+            "name": "lamp",
+            "containerId": "",
+            "created": "2023-12-27T13:49:39.267Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "c2415c0d-87eb-4094-9d7d-c51e2dea8432",
+            "name": "thermostat",
+            "containerId": "",
+            "created": "2023-12-27T13:51:27.899Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "bc449a98-bd55-43ad-b266-8240cd042e85",
+            "colId": "3ba70368-dc4c-474c-8b3b-3ef58f19e1da",
+            "containerId": "aa57f58f-6718-4ed6-9178-c55ab8bc48b3",
+            "name": "ON",
+            "url": "http://127.0.0.1:8000/655a0a49d7ffa77e98ddda31/set/color/550000",
+            "method": "POST",
+            "sortNum": 5000,
+            "created": "2023-11-21T14:23:10.021Z",
+            "modified": "2023-12-27T13:46:44.096Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9a6f034a-5d9d-4371-a529-fbad15e2895e",
+            "colId": "3ba70368-dc4c-474c-8b3b-3ef58f19e1da",
+            "containerId": "aa57f58f-6718-4ed6-9178-c55ab8bc48b3",
+            "name": "OFF",
+            "url": "http://127.0.0.1:8000/655a0a49d7ffa77e98ddda31/set/state/off",
+            "method": "POST",
+            "sortNum": 7500,
+            "created": "2023-11-21T14:23:30.519Z",
+            "modified": "2023-12-27T13:47:32.934Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e878d885-6762-4b45-8f9a-bd8cddbaf649",
+            "colId": "3ba70368-dc4c-474c-8b3b-3ef58f19e1da",
+            "containerId": "aa57f58f-6718-4ed6-9178-c55ab8bc48b3",
+            "name": "red",
+            "url": "http://127.0.0.1:8000/655a0a49d7ffa77e98ddda31/set/Color/FF0000",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-11-27T18:34:58.489Z",
+            "modified": "2023-11-27T18:35:32.481Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "79d79df2-5bd6-4496-8986-0c5e3860e014",
+            "colId": "3ba70368-dc4c-474c-8b3b-3ef58f19e1da",
+            "containerId": "",
+            "name": "devices",
+            "url": "http://127.0.0.1:8000/",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-11-21T14:24:12.989Z",
+            "modified": "2023-12-27T13:48:56.446Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "fdea0888-0c05-442f-823a-8eb8c818bc3d",
+            "colId": "3ba70368-dc4c-474c-8b3b-3ef58f19e1da",
+            "containerId": "aa57f58f-6718-4ed6-9178-c55ab8bc48b3",
+            "name": "green",
+            "url": "http://127.0.0.1:8000/655a0a49d7ffa77e98ddda31/set/Color/00FF00",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-11-27T18:36:07.441Z",
+            "modified": "2023-11-27T18:36:16.478Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "db6b75f1-cf45-4530-bfb2-c6f8b982fc91",
+            "colId": "3ba70368-dc4c-474c-8b3b-3ef58f19e1da",
+            "containerId": "aa57f58f-6718-4ed6-9178-c55ab8bc48b3",
+            "name": "blue",
+            "url": "http://127.0.0.1:8000/655a0a49d7ffa77e98ddda31/set/Color/0000FF",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2023-11-27T18:36:23.799Z",
+            "modified": "2023-11-27T18:36:29.782Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8c05db87-ed2f-4929-8af5-f47c9af25527",
+            "colId": "3ba70368-dc4c-474c-8b3b-3ef58f19e1da",
+            "containerId": "aa57f58f-6718-4ed6-9178-c55ab8bc48b3",
+            "name": "rgbinfo",
+            "url": "http://127.0.0.1:8000/655a0a49d7ffa77e98ddda31",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2023-12-27T13:49:07.755Z",
+            "modified": "2023-12-27T13:49:18.166Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "94ee44df-e82c-4465-8a57-ab1b3507bdb7",
+            "colId": "3ba70368-dc4c-474c-8b3b-3ef58f19e1da",
+            "containerId": "9e2a07fa-a613-49a6-b572-29b029259f82",
+            "name": "ON",
+            "url": "http://127.0.0.1:8000/6589e43ac9ab0c42ed2d8188/set/state/on",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2023-12-27T13:49:46.962Z",
+            "modified": "2023-12-27T13:50:23.082Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "68a8a194-4c94-4471-82f8-edf6a6a3d827",
+            "colId": "3ba70368-dc4c-474c-8b3b-3ef58f19e1da",
+            "containerId": "9e2a07fa-a613-49a6-b572-29b029259f82",
+            "name": "OFF",
+            "url": "http://127.0.0.1:8000/6589e43ac9ab0c42ed2d8188/set/state/off",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2023-12-27T13:50:31.298Z",
+            "modified": "2023-12-27T13:50:41.544Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5445c001-78bd-42e1-b0f6-17b1e1973218",
+            "colId": "3ba70368-dc4c-474c-8b3b-3ef58f19e1da",
+            "containerId": "9e2a07fa-a613-49a6-b572-29b029259f82",
+            "name": "lampinfo",
+            "url": "http://127.0.0.1:8000/6589e43ac9ab0c42ed2d8188",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2023-12-27T13:50:58.885Z",
+            "modified": "2023-12-27T14:12:07.770Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "579d39bc-f0b0-42ea-9238-4bb343a83c3d",
+            "colId": "3ba70368-dc4c-474c-8b3b-3ef58f19e1da",
+            "containerId": "c2415c0d-87eb-4094-9d7d-c51e2dea8432",
+            "name": "thermostatinfo",
+            "url": "http://127.0.0.1:8000/6589e706c9ab0c42ed2d818b",
+            "method": "GET",
+            "sortNum": 120000,
+            "created": "2023-12-27T13:51:39.285Z",
+            "modified": "2023-12-27T14:12:21.670Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "runOptions": {
+            "delay": 1000,
+            "iterations": 1,
+            "dataFilePath": ""
+        }
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "evosmarthome": {//database
+
+        "devices": [//collection
+            //example document
+            {
+                "_id": {"$oid": "655a0a49d7ffa77e98ddda31"},
+                "tasmota_id": "esp32_1",
+                "device_type": "lamp",  // lamp / rgb / termostat
+                "name": "esprgb1",
+                "change_date": null,    //not yet implemented
+                "own_properties": {
+                    //lamp properties
+                    "state": "OFF",
+                    //rgb properties
+                    "state": "ON",
+                    "color": "7D4B00",
+                    //termostat properties 
+                    "temperature": 19.2,
+                    "humidity": 61.5,
+                    "battery": 96
+                },
+                "connected": true
+            }
+        ],
+
+        "tasmota": [//collection
+            //example document
+            {
+                "_id": {"$oid": "6589e11dc9ab0c42ed2d8180"},
+                "tasmota_id": "esp32_1",
+                "mqtt": [//descriptions to identify mqtt messages
+                    {
+                        "prefix": "stat",
+                        "topic": "RESULT",
+                        "payload": "POWER2",                
+                        //payload key to search for in a didictionary
+                        "fieldname": "state",               
+                        //fieldname value gets write with this name into own_properties dictionary in the devices collection
+                        "id": "655a0a49d7ffa77e98ddda31"    
+                        //id paired with devices collection
+                    },
+                    {
+                        "prefix": "tele",
+                        "topic": "SENSOR",
+                        "payload": [            //List with 2 items can be used when tasmota gives nested dictionary payload
+                            "ATCd0d167",
+                            "Temperature"
+                        ],
+                        "fieldname": "temperature",
+                        "id": "6589e706c9ab0c42ed2d818b"
+                    }
+                ],
+                "valid_requests": {
+                        "655a0a49d7ffa77e98ddda31": {   //id paired with devices collection
+                            "state": "POWER2",  //"propertie": "command"
+                            "color": "Color"
+                        },
+                        "6589e43ac9ab0c42ed2d8188": {
+                            "state": "POWER1"
+                        }
+                }
+            }
+        ]
+    }
+}
+//see evosmarthome.devices.json and evosmarthome.tasmota.json for the full database exports

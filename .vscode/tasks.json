@@ -1,0 +1,45 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "command": "C:\\Program Files\\mosquitto\\mosquitto.exe",
+            "args": [
+                "-v",
+                "-c",
+                "\"${workspaceFolder}\\mosquitto_lan.conf\""
+            ],
+            "problemMatcher": [],
+            "label": "Start mosquitto broker"
+        },
+        {
+            "type": "shell",
+            "command": "mongod",
+            "label": "Start MongoDB server",
+            "problemMatcher": []
+        },
+        {
+            "type": "process",
+            "command": "pnpm",
+            "args": [
+                "install"
+            ],
+            "options": {
+                "cwd": "frontend"
+            },
+            "problemMatcher": [],
+            "label": "frontend: pnpm install",
+            "detail": "install frontend dependencies with pnpm"
+        },
+        {
+            "type": "npm",
+            "script": "install",
+            "path": "frontend",
+            "problemMatcher": [],
+            "label": "frontend: npm install",
+            "detail": "install frontend dependencies with npm"
+        }
+    ]
+}

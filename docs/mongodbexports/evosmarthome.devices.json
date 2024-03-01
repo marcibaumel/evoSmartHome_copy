@@ -1,0 +1,42 @@
+[{
+  "_id": {
+    "$oid": "655a0a49d7ffa77e98ddda31"
+  },
+  "tasmota_id": "esp32_1",
+  "device_type": "rgb",
+  "name": "esprgb1",
+  "change_date": null,
+  "own_properties": {
+    "state": "OFF",
+    "color": "550000"
+  },
+  "connected": true
+},
+{
+  "_id": {
+    "$oid": "6589e43ac9ab0c42ed2d8188"
+  },
+  "tasmota_id": "esp32_1",
+  "device_type": "lamp",
+  "name": "espled1",
+  "change_date": null,
+  "own_properties": {
+    "state": "OFF"
+  },
+  "connected": true
+},
+{
+  "_id": {
+    "$oid": "6589e706c9ab0c42ed2d818b"
+  },
+  "tasmota_id": "esp32_1",
+  "device_type": "termostat",
+  "name": "espthermo1",
+  "change_date": null,
+  "own_properties": {
+    "temperature": 19.8,
+    "humidity": 56.4,
+    "battery": 96
+  },
+  "connected": true
+}]

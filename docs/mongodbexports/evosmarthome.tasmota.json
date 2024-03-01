@@ -1,0 +1,68 @@
+[{
+  "_id": {
+    "$oid": "6589e11dc9ab0c42ed2d8180"
+  },
+  "tasmota_id": "esp32_1",
+  "mqtt": [
+    {
+      "prefix": "stat",
+      "topic": "RESULT",
+      "payload": "POWER2",
+      "fieldname": "state",
+      "id": "655a0a49d7ffa77e98ddda31"
+    },
+    {
+      "prefix": "stat",
+      "topic": "RESULT",
+      "payload": "Color",
+      "fieldname": "color",
+      "id": "655a0a49d7ffa77e98ddda31"
+    },
+    {
+      "prefix": "stat",
+      "topic": "RESULT",
+      "payload": "POWER1",
+      "fieldname": "state",
+      "id": "6589e43ac9ab0c42ed2d8188"
+    },
+    {
+      "prefix": "tele",
+      "topic": "SENSOR",
+      "payload": [
+        "ATCd0d167",
+        "Temperature"
+      ],
+      "fieldname": "temperature",
+      "id": "6589e706c9ab0c42ed2d818b"
+    },
+    {
+      "prefix": "tele",
+      "topic": "SENSOR",
+      "payload": [
+        "ATCd0d167",
+        "Humidity"
+      ],
+      "fieldname": "humidity",
+      "id": "6589e706c9ab0c42ed2d818b"
+    },
+    {
+      "prefix": "tele",
+      "topic": "SENSOR",
+      "payload": [
+        "ATCd0d167",
+        "Battery"
+      ],
+      "fieldname": "battery",
+      "id": "6589e706c9ab0c42ed2d818b"
+    }
+  ],
+  "valid_requests": {
+    "655a0a49d7ffa77e98ddda31": {
+      "state": "POWER2",
+      "color": "Color"
+    },
+    "6589e43ac9ab0c42ed2d8188": {
+      "state": "POWER1"
+    }
+  }
+}]
